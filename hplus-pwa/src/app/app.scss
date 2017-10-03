@@ -36,7 +36,7 @@
 }
 
 .profile-bg {
-  background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
+  background-image: linear-gradient(135deg, #00193A, #072854, #0898e0);
 }
 //
 //
@@ -289,12 +289,12 @@ ion-navbar.no-border {
 
 // style for auth pages
 .auth-page {
-  background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
+  background-image: linear-gradient(135deg, #00193A, #072854);
   &::after {
     content: "";
-    background: url("../assets/img/bg.jpg") no-repeat;
+    background: url("../assets/img/background.jpg") no-repeat;
     background-size: cover;
-    opacity: 0.1;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -313,11 +313,10 @@ ion-navbar.no-border {
       width: 86%;
 
       .logo {
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 96px;
         margin: 20px auto 0;
-        border-radius: 10%;
-        background: url("../assets/img/ionbooking-ico.png") no-repeat;
+        background: url("../assets/img/logo.png") no-repeat;
         background-size: 100%;
       }
 
@@ -363,7 +362,7 @@ ion-navbar.no-border {
     background-size: 100%;    
   }
   .toolbar-background {
-    background-image: linear-gradient(135deg, #271b38, #563d7c, #7952b3);
+    background-image: linear-gradient(135deg, #00193A, #072854);
   }
 
   .other-data {

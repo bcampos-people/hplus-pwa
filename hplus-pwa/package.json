@@ -43,7 +43,7 @@
   "devDependencies": {
     "@ionic/app-scripts": "^2.1.4",
     "html-minifier": "^3.5.5",
-    "ionic": "3.10.3",
+    "ionic": "3.12.0",
     "purify-css": "^1.2.5",
     "typescript": "2.3.4"
   },

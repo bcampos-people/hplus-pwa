@@ -1,13 +1,10 @@
 <!-- -->
-<ion-content padding class="login common-bg auth-page">
+<ion-content padding class="animated fadeIn login common-bg auth-page">
   <div class="login-content">
 
     <!-- Logo -->
     <div padding-horizontal text-center class="animated fadeInDown">
       <div class="logo"></div>
-      <h2 ion-text class="text-white" no-margin>
-        ion<strong>Booking</strong>
-      </h2>
     </div>
 
     <!-- Login form -->
@@ -29,17 +26,17 @@
       </ion-item>
     </ion-list>
 
-    <p text-right ion-text color="light" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p>
+    <!-- ESQUECEU A SENHA -->
+    <!-- <p text-right ion-text color="light" tappable (click)="forgotPass()"><strong>Esqueceu a senha?</strong></p> -->
 
     <div>
-      <button ion-button icon-start block color="primary" tappable (click)="login()">
-        <ion-icon name="log-in"></ion-icon>
-        SIGN IN
+      <button ion-button icon-start block color="secondary" tappable (click)="login()">
+        <ion-icon name="log-in"></ion-icon> Entrar
       </button>
-
-      <p text-center ion-text color="light">Or Sign in with:</p>
-
+      
       <ion-grid>
+        <p text-center ion-text color="light">ou entrar com:</p>
+      
         <ion-row>
           <ion-col col-4>
             <button ion-button icon-only block class="btn-facebook">
@@ -58,14 +55,14 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
     </div>
 
-
-    <!-- Other links -->
+    <!-- CADASTRE-SE -->
+    <!--
     <div text-center margin-top>
-      <span ion-text color="light" tappable (click)="register()">New here? <strong>Sign up</strong></span>
+      <span ion-text color="light" tappable (click)="register()">Novo aqui? <strong>Cadastre-se</strong></span>
     </div>
+    -->
 
   </div>
 </ion-content>
