@@ -1,0 +1,14 @@
+{
+  "name": "HotelPlus",
+  "type": "ionic1",
+  "app_id": "",
+  "integrations": {
+    "cordova": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

@@ -1,0 +1,46 @@
+<ion-view view-title="Guest Service">
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button>
+		</ion-nav-back-button>
+
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+		</ion-nav-buttons>
+    </ion-nav-bar>
+
+	<ion-content overflow-scroll="true">
+		<section class="extrato-container">
+			<header class="row">
+				<div class="col text-center">
+					<h1 class="titulo-solicitacoes">Solicitações em Andamento</h1>
+				</div>
+			</header>
+
+			<div class="row padding">
+				<section class="login-box">
+					
+					<ion-list>
+						<ion-item class="itens-servicos">
+					    	<p>18/07</p>
+					    	<p>Banheiro com vazamento</p>
+					    	<p class="st-finalizada">Finalizada</p>
+					    </ion-item>
+					    <ion-item class="itens-servicos">
+					    	<p>19/07</p>
+				    		<p>Limpeza fora do período</p>
+				    		<p class="st-andamento">Andamento</p>
+					    </ion-item>
+					    <ion-item class="itens-servicos">
+					    	<p>20/07</p>
+				    		<p>Toalha para hóspede</p>
+				    		<p class="st-aguardando">Aguardando</p>
+					    </ion-item>
+					</ion-list>
+
+					<a href="#/app/add-solicitacao" class="button button-full button-large button-balanced button-max">nova solicitação</a>
+				</section>
+			</div>
+			
+		</section>
+	</ion-content>
+</ion-view>

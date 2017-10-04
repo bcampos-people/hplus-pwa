@@ -1,0 +1,45 @@
+<ion-view view-title="Resumo do Pedido">
+	<ion-nav-bar class="bar-positive">
+		<ion-nav-back-button>
+		</ion-nav-back-button>
+
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+		</ion-nav-buttons>
+    </ion-nav-bar>
+
+	<ion-content overflow-scroll="true">
+		<section class="roomserv-wrapper">
+			
+			<ion-list show-delete="false" can-swipe="true">
+			    <ion-item href="#" class="item-icon-right">
+			    	<p class="itens-swiped"><span>1</span>Frango a Passarinho Assado</p>
+			    	<ion-option-button class="button-assertive button-swiped">Excluir</ion-option-button>
+			    </ion-item>
+			    <ion-item href="#" class="item-icon-right">
+			    	<p class="itens-swiped"><span>3</span>Costelinha de Porco Recheada</p>
+			    	<ion-option-button class="button-assertive button-swiped">Excluir</ion-option-button>
+			    </ion-item>
+			    <ion-item href="#" class="item-icon-right">
+			    	<p class="itens-swiped"><span>2</span>Vanilla Cuba Libre</p>
+			    	<ion-option-button class="button-assertive button-swiped">Excluir</ion-option-button>
+			    </ion-item>
+			    <ion-item href="#" class="item-icon-right">
+			    	<p class="itens-swiped"><span>1</span>Caju Cremoso</p>
+			    	<ion-option-button class="button-assertive button-swiped">Excluir</ion-option-button>
+			    </ion-item>
+		    </ion-list>
+
+		    <div class="row">
+		    	<div class="col">
+		    		<div class="valor-total">
+		    			<p>Total</p>
+						<p>R$ 54<span>,00</span></p>
+		    		</div>
+		    		<a href="#/app/room-obrigado" class="button button-full button-large button-balanced button-max">enviar pedido</a>
+		    	</div>
+		    </div>
+
+		</section>
+	</ion-content>
+</ion-view>

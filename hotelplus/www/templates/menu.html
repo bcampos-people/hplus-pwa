@@ -1,0 +1,44 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-clear">
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content>
+      
+      <section class="wrapper">
+        <div class="user-info">
+          <h1 class="title">
+            Emily Ratajkowsi
+            <span>emilyrataj@email.com.br</span>
+          </h1>
+        </div>
+        
+        <div class="menu-principal">
+          <ul class="list menu-list">
+            <li class="item"><a href="#/app/inicio" menu-close>Início</a></li>
+            <li class="item"><a href="#/app/room-service" menu-close>Room Service</a></li>
+            <li class="item"><a href="#/app/atracoes-eventos" menu-close>Atrações &amp; Eventos</a></li>
+            <li class="item"><a href="#/app/extrato-conta" menu-close>Extrato da Conta</a></li>
+            <li class="item"><a href="#/app/lista-ramais" menu-close>Lista de Ramais</a></li>
+            <li class="item"><a href="#/app/guestone" menu-close>GuestOne</a></li>
+            <li class="item"><a href="#/app/guest-service" menu-close>Guest Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="menu-secundario">
+          <ul class="list">
+            <li class="item"><a href="#/app/editar-perfil" menu-close>Editar Perfil</a></li>
+            <li class="item"><a href="#/app/login" menu-close>Sair</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

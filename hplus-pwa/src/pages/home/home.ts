@@ -7,6 +7,7 @@ import {SearchCarsPage} from "../search-cars/search-cars";
 import {SearchTripsPage} from "../search-trips/search-trips";
 import {HotelPage} from "../hotel/hotel";
 import {AccountPage} from "../account/account";
+import {PertoPage} from "../perto-mim/perto-mim";
 
 declare var google: any;
 
@@ -142,6 +143,11 @@ export class HomePage {
   // to go account page
   goToAccount() {
     this.nav.push(AccountPage);
+  }
+
+  // go to perto de mim page
+  gotoPerto() {
+    this.nav.push(PertoPage);
   }
 
   presentNotifications(myEvent) {

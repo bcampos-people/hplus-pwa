@@ -1,0 +1,533 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$positive:                        #09213b !default;
+$balanced:                        #a6c514 !default;
+$calm:                            #3d72ab !default;
+
+
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Import Roboto Google Font
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+
+// Ionic
+.wrapper {
+	display: flex;
+	height: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;	
+}
+.wrapper-bg {
+	background: $light url(../img/background.jpg) center center no-repeat;
+	justify-content: center;
+	background-size: cover;
+}
+
+
+// Menu
+.user-info,
+.menu-principal,
+.menu-secundario {
+	padding: 2em 2em;
+}
+.user-info > .title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.75rem;
+	font-weight: 400;
+}
+.user-info > .title span {
+	color: #555;
+	display: block;
+	font-size: 1rem;
+	margin-top: .5rem;
+}
+.menu-principal {
+	flex: 1 1 auto;
+}
+.menu-secundario {
+	align-items: flex-end;
+}
+.menu-principal .item,
+.menu-secundario .item {
+	padding: .75em 0;
+	border: 1px solid transparent;
+}
+.menu-principal .item a,
+.menu-secundario .item a  {
+	text-decoration: none;
+}
+
+
+
+// Login + Cadastro
+.logo,
+.welcome,
+.obrigado {
+	display: flex;	
+	padding: 23% 0;
+	justify-content: center;
+}
+.logo img,
+.btn-add-image a img {
+	width: 50%;
+	height: 100%;
+}
+.btn-add-image {
+	padding: 5% 2.5% 2.5%;
+	text-align: center;
+}
+.btn-add-image a img {
+	width: 35%;
+}
+.btn-add-image a .avatar {
+	width: 50%;
+}
+.btn-add-image .icon-edit {
+	position: absolute;
+	height: auto;
+	width: 40px;
+	left: 61.5%;
+	top: 30px;
+}
+.form-box {
+	color: #fff;
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}
+.login-box {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.button-max {
+	margin: 0;
+	font-weight: 900;
+	border-radius: 0;	
+	line-height: 2.75em;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	
+}
+.item-custom {
+	border: 0;
+	padding: 1.25em;
+	border-bottom: 1px solid transparent;
+	background: rgba(255,255,255,1);
+}
+.item-custom .input-label {
+	color: #999;
+	font-size: .85em;
+	font-weight: 600;
+	letter-spacing: -.01rem;
+	text-transform: uppercase;
+}
+.item-custom .box-password {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.item-custom .input-custom {
+	color: #000;
+	font-size: 1em;
+	background: transparent;
+}
+.item-outline {
+	margin: .5em 0;
+	padding: .35em 0;
+	border-bottom: 1px solid $stable !important;
+}
+.item-custom .input-custom::-webkit-input-placeholder { font-size: .75em; color: #ccc; }
+.item-custom .input-custom::-moz-placeholder          { font-size: .75em; color: #ccc; }
+.item-custom .input-custom:-ms-input-placeholder      { font-size: .75em; color: #ccc; }
+.item-custom .input-custom:-moz-placeholder           { font-size: .75em; color: #ccc; }
+
+
+// Welcome + Obrigado
+.welcome,
+.obrigado {
+	color: #fff;
+	flex: 1 auto;
+	padding: 20% 0;
+	margin-top: -20px;
+	align-items: center;
+	flex-direction: column;
+}
+.welcome img,
+.obrigado img {
+	width: 30%;
+	height: 100%;
+	margin: 25% auto;	
+}
+.obrigado img {
+	width: 50%;
+	height: 100%;
+	margin: 15% auto;
+}
+.welcome h1,
+.obrigado h1 {
+	color: #fff;
+	font-weight: 300;
+}
+.welcome p,
+.obrigado p {
+	text-align: center;
+	font-size: .9rem;
+	line-height: 1.5;
+	padding: 0 7.5%;
+}
+.obrigado a {
+	text-align: center;
+}
+.obrigado p,
+.obrigado h1 {
+	color: $positive;
+}
+
+
+// Início
+.menu-container,
+.guestone-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: $stable;
+}
+.extrato-container,
+.guestone-container {
+	background-color: $light;
+}
+.menu-container > .row,
+.room-container > .row,
+.guestone-container > .row {
+	flex: 1;
+}
+.header-inicio,
+.header-guestone,
+.header-guestone-pool {
+	color: $light;
+	margin-bottom: .75em;
+	flex: .6 1 !important;
+	align-items: center;
+	background: $calm url(../img/background-header.jpg) center center no-repeat;
+	background-size: cover;
+}
+.header-guestone,
+.header-guestone-pool {
+	color: $positive;
+	flex: .5 1 !important;
+	background: $light none;
+}
+.header-guestone-pool {
+	flex: .85 1 !important;
+}
+.header-inicio .titulo,
+.header-guestone .titulo,
+.header-guestone-pool .titulo {
+	color: $light;
+	font-size: 2.5em;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+.header-guestone .titulo,
+.header-guestone-pool .titulo {
+	margin: .75em auto 0;
+	color: $positive;
+	font-size: 2em;
+}
+.header-inicio .titulo span {
+	font-size: inherit;
+	color: rgba(255,255,255,.5);
+}
+.icon-row,
+.icon-guestone-row,
+.icon-guestone-pool-row {
+	margin: auto;
+	padding: .25em;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+}
+.icon-guestone-row {
+	align-items: flex-start;
+}
+.icon-guestone-pool-row {
+	padding: 2em;
+}
+.icon-row > .col,
+.icon-guestone-row > .col,
+.icon-guestone-pool-row > .col {
+	cursor: pointer;
+	padding: .5em;
+}
+.icon-guestone-pool-row > .col {
+	border: 5px dashed transparent;
+	padding: .4em;
+}
+.item-menu-card,
+.item-guestone-card,
+.item-guestone-icon {
+	padding: .75em;
+	border-radius: .2em;
+	background-color: #fff;
+	box-shadow: 0 .2em .5rem rgba(0,0,0,.1);
+}
+.item-guestone-card {
+	padding: 0;
+	overflow: hidden;
+}
+.item-guestone-icon {
+	padding: .25em;
+	display: flex;
+	box-shadow: none;
+}
+.item-menu-card .thumbnail {
+	overflow: hidden;
+	justify-content: center;
+}
+.item-menu-card .thumbnail img {
+	max-width: 70%;
+}
+.item-menu-card a,
+.item-guestone-card a,
+.item-guestone-icon a {
+	font-size: 1em;
+	font-weight: 300;
+	margin-top: .5em;
+	text-decoration: none;
+}
+.item-guestone-icon a {
+	margin: 0;
+}
+.item-guestone-card .thumbnail img { width: 100%; }
+.item-guestone-icon .thumbnail img { width: 100%; }
+
+.item-guestone-card span {
+	margin: .5em auto 1em;
+	font-weight: 400;
+	display: block;
+}
+.ico-check {
+	width: 38px;
+	height: 32px;
+	position: fixed;
+	background: url(../img/ico-check.png) 5px center no-repeat;
+}
+.ico-none {
+	background-image: none;
+}
+
+
+
+// Room Service
+.roomserv-wrapper {
+	background: $light url(../img/img-roomservice.jpg) 0 0 no-repeat;
+	background-size: 100%;
+	padding-top: 140px;
+}
+.roomserv-wrapper .list .item {
+	border: 1px solid rgba(0,0,0,.05);
+}
+.roomserv-wrapper .list .item.item-pai.active {
+	font-size: 1.25em;
+	font-weight: 500;
+}
+.roomserv-wrapper .list .item.active {
+	color: $positive;
+	background-color: $light;
+}
+.roomserv-wrapper .list .item.item-accordion {
+	font-size: 1em;	
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 50px;
+	transition: 0.09s all linear;
+}
+.roomserv-wrapper .list .item.item-accordion a {
+	text-decoration: none;
+	flex: 1 1 auto;
+	color: #333;
+}
+.roomserv-wrapper .list .item.item-accordion.ng-hide {
+	line-height: 0px;
+}
+.roomserv-wrapper .list .item.item-accordion.ng-hide-add,
+.roomserv-wrapper .list .item.item-accordion.ng-hide-remove {
+	display: block !important;
+}
+.roomserv-wrapper .list .item .item-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.roomserv-wrapper .list .item .item-flex .item-preco {
+	font-weight: 600;
+	font-size: 1.2em;
+	color: $calm;
+}
+.roomserv-wrapper .itens-swiped {
+	padding-bottom: .5em;
+	padding-top: .5em;
+	font-size: 1rem;
+}
+.roomserv-wrapper .itens-swiped span {
+	margin-right: 1em;
+	font-weight: bold;
+}
+.roomserv-wrapper .button-swiped {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px !important;
+    font-size: 14px !important;
+}
+.roomserv-wrapper .valor-total,
+.extrato-container .valor-total {
+	display: flex;
+	font-size: 2em;
+	font-weight: 500;
+	margin: .75em auto .5em;
+	justify-content: space-between;
+}
+.roomserv-wrapper .valor-total p span,
+.extrato-container .valor-total p span {
+	font-size: .5em;
+}
+.roomserv-wrapper .row-obrigado {
+	flex-direction: column;
+}
+.roomserv-wrapper .row-obrigado .col-message {
+	color: $positive;
+	text-align: center;
+}
+.roomserv-wrapper .row-obrigado .col-message h1 {
+	font-weight: 400;
+}
+.roomserv-wrapper .row-obrigado .col-message img {
+	margin: 7.5% 0;
+	width: 40%;
+}
+
+
+// Extrato da Conta
+.extrato-container .titulo-extrato,
+.extrato-container .titulo-solicitacoes {
+	font-size: 2.5em;
+	font-weight: 300;
+	color: $positive;
+	padding: .75em 0 .25em;
+}
+.extrato-container .titulo-section {
+	color: $positive;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.25em .5em .75em;
+	text-transform: uppercase;
+}
+.extrato-container .titulo-solicitacoes {
+	font-size: 2em;
+	padding: 1.25em 0 .5em;
+}
+
+.extrato-container .col-legenda span {
+	color: #666;
+	font-size: .7em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.extrato-container .col-legenda p {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: .2em;
+	color: #333;
+}
+.extrato-container .itens-consumo,
+.extrato-container .itens-servicos {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.extrato-container .itens-consumo p,
+.extrato-container .itens-servicos p {
+	font-size: .9em;
+}
+.extrato-container .itens-consumo p:nth-child(2),
+.extrato-container .itens-servicos p:nth-child(2) {
+	padding-left: 1em;
+	flex: 1 1 auto;
+}
+.extrato-container .itens-servicos p.st-finalizada,
+.extrato-container .itens-servicos p.st-aguardando,
+.extrato-container .itens-servicos p.st-andamento {
+	color: $balanced;
+	font-size: .7em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.extrato-container .itens-servicos p.st-aguardando { color: $assertive; }
+.extrato-container .itens-servicos p.st-andamento { color: $energized; }
+
+
+// Lista de Ramais
+.box-busca {
+	background-color: $calm;
+}
+.box-lista > .item {
+	margin-bottom: .5em;
+	padding: 1.5em 1em .75em;
+	border: 1px solid transparent;
+	border-bottom-color: $stable;
+}
+.box-lista .item .ramal-num {
+	display: flex;
+	font-size: 1.25em;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.item-outline {
+	border: 1px solid white;
+	background: transparent;
+}
+.input-outline {
+	font-weight: 600;
+	color: $light !important;
+}
+.box-busca .item-outline .input-outline {
+	padding: 1em;
+}
+.input-outline::-webkit-input-placeholder { color: $light; font-weight: 300; text-transform: lowercase; }
+.input-outline::-moz-placeholder          { color: $light; font-weight: 300; text-transform: lowercase; }
+.input-outline:-ms-input-placeholder      { color: $light; font-weight: 300; text-transform: lowercase; }
+.input-outline:-moz-placeholder           { color: $light; font-weight: 300; text-transform: lowercase; }
+
+
+
+
+
+
+

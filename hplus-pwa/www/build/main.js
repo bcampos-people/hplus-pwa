@@ -1101,12 +1101,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_tab_reviews_tab_reviews__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_trip_detail_trip_detail__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_trips_trips__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_perto_mim_perto_mim__ = __webpack_require__(276);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1167,7 +1169,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_24__pages_search_trips_search_trips__["a" /* SearchTripsPage */],
             __WEBPACK_IMPORTED_MODULE_25__pages_tab_reviews_tab_reviews__["a" /* TabReviewsPage */],
             __WEBPACK_IMPORTED_MODULE_26__pages_trip_detail_trip_detail__["a" /* TripDetailPage */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_trips_trips__["a" /* TripsPage */]
+            __WEBPACK_IMPORTED_MODULE_27__pages_trips_trips__["a" /* TripsPage */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_perto_mim_perto_mim__["a" /* PertoPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
@@ -1197,7 +1200,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_24__pages_search_trips_search_trips__["a" /* SearchTripsPage */],
             __WEBPACK_IMPORTED_MODULE_25__pages_tab_reviews_tab_reviews__["a" /* TabReviewsPage */],
             __WEBPACK_IMPORTED_MODULE_26__pages_trip_detail_trip_detail__["a" /* TripDetailPage */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_trips_trips__["a" /* TripsPage */]
+            __WEBPACK_IMPORTED_MODULE_27__pages_trips_trips__["a" /* TripsPage */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_perto_mim_perto_mim__["a" /* PertoPage */]
         ],
         providers: [
             __WEBPACK_IMPORTED_MODULE_3__services_hotel_service__["a" /* HotelService */],
@@ -1891,6 +1895,47 @@ MyApp = __decorate([
 
 /***/ }),
 
+/***/ 276:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PertoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(53);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PertoPage = (function () {
+    function PertoPage(nav) {
+        this.nav = nav;
+    }
+    // logout
+    PertoPage.prototype.logout = function () {
+        this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]);
+    };
+    return PertoPage;
+}());
+PertoPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'perto-min',template:/*ion-inline-start:"/Users/people/Documents/homework/hplus-pwa/src/pages/perto-mim/perto-mim.html"*/'<ion-header class="no-shadow">\n    <ion-navbar class="no-border" color="primary">\n    <ion-title>\n        <ion-icon name="cog"></ion-icon>\n        Perto de Mim\n    </ion-title>\n    </ion-navbar>\n</ion-header>\n    \n<ion-content class="common-bg">\n    <h1>Hallo!</h1>\n</ion-content>    '/*ion-inline-end:"/Users/people/Documents/homework/hplus-pwa/src/pages/perto-mim/perto-mim.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]])
+], PertoPage);
+
+//# sourceMappingURL=perto-mim.js.map
+
+/***/ }),
+
 /***/ 32:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1905,6 +1950,7 @@ MyApp = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__search_trips_search_trips__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hotel_hotel__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__account_account__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__perto_mim_perto_mim__ = __webpack_require__(276);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1914,6 +1960,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -2030,6 +2077,10 @@ var HomePage = (function () {
     HomePage.prototype.goToAccount = function () {
         this.nav.push(__WEBPACK_IMPORTED_MODULE_8__account_account__["a" /* AccountPage */]);
     };
+    // go to perto de mim page
+    HomePage.prototype.gotoPerto = function () {
+        this.nav.push(__WEBPACK_IMPORTED_MODULE_9__perto_mim_perto_mim__["a" /* PertoPage */]);
+    };
     HomePage.prototype.presentNotifications = function (myEvent) {
         console.log(myEvent);
         var popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__notifications_notifications__["a" /* NotificationsPage */]);
@@ -2041,11 +2092,12 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/people/Documents/homework/hplus-pwa/src/pages/home/home.html"*/'<!-- -->\n<ion-header class="animated fadeIn no-shadow">\n  \n    <ion-navbar class="no-border" color="dark">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>\n        <div ion-text class="icon-title text-white"></div>\n        <span class="text-title">Hotel Plus</span>\n      </ion-title>\n      <ion-buttons end>\n        <button ion-button tappable (click)="presentNotifications($event)">\n          <ion-icon name="notifications"></ion-icon>\n        </button>\n        <button ion-button tappable (click)="goToAccount()">\n          <ion-icon name="cog"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content class="animated fadeIn common-bg">\n    <!-- CLIMA -->\n    <ion-item-group class="weather-widget">\n      <ion-grid>\n        <ion-row>\n          <ion-col class="logo-hotel">\n            <img src="../assets/img/sheraton-logo.png" alt="">\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col>\n            <ul class="clima">\n              <li class="local">\n                Rio de Janeiro\n                <span>céu claro</span>\n              </li>\n              <li class="temp"><i class="wi wi-night-sleet"></i> 26ºc</li>\n              <li class="max"><span>Max</span>26ºc</li>\n              <li class="min"><span>Min</span>18ºc</li>\n            </ul>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-item-group>\n    \n    <!-- MENU PRINCIPAL -->\n    <ion-item-group class="menu-widget">\n      <ion-item>\n        <ion-grid> <!-- incluir atributo \'no-padding\' para remover o espaço da área -->\n  \n          <ion-row>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-room" color="light">\n                <span class="button-label">Room Service</span>\n              </button>\n            </ion-col>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-perto" color="light">\n                <span class="button-label">Perto de Mim</span>\n              </button>\n            </ion-col>\n          </ion-row>\n  \n          <ion-row>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-extrato" color="light">\n                <span class="button-label">Extrato da Conta</span>\n              </button>\n            </ion-col>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-ramais" color="light">\n                <span class="button-label">Lista de Ramais</span>\n              </button>\n            </ion-col>\n          </ion-row>\n  \n          <ion-row>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-guestone" color="light">\n                <span class="button-label">GuestOne</span>\n              </button>\n            </ion-col>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-service" color="light">\n                <span class="button-label">Guest Service</span>\n              </button>\n            </ion-col>\n          </ion-row>\n  \n        </ion-grid>\n      </ion-item>\n    </ion-item-group>\n  \n    <!-- HOTEIS DA REDE -->\n    <ion-item-group class="home-widget">\n      <ion-item-divider color="primary">\n        <h2 ion-text class="bold text-white">\n          <ion-icon name="pricetags"></ion-icon> \n          Demais Hotéis da Rede\n        </h2>\n      </ion-item-divider>\n  \n      <ion-item>\n        <ion-grid class="list-hotels primary-bg" no-padding>\n          <ion-row no-padding>\n            <ion-col *ngFor="let hotel of hotels; let i = index" col-6 col-md-3 tappable (click)="viewHotel(hotel.id)">\n              <div class="hotel-bg" [ngStyle]="{\'background-image\': \'url(\' + hotel.thumb + \')\'}" *ngIf="i < 4">\n                <div class="bg-filter">\n                  <div class="discount" *ngIf="hotel.sale_price">{{ (100 * (1 - hotel.price / hotel.sale_price)).toFixed(0)\n                    }}%\n                  </div>\n                  <div class="bottom-info">\n  \n                    <div>\n                      <div class="pull-left">\n                        <h5 ion-text class="text-white">{{ hotel.name }}</h5>\n                      </div>\n                      <div class="pull-right">\n                        <span class="origin-price hide-sm"\n                              *ngIf="hotel.sale_price">{{ hotel.price | currency:\'USD\':true }}</span>\n                      </div>\n                      <div class="clear"></div>\n                    </div>\n  \n                    <div>\n                      <div class="pull-left">\n                        <ion-badge class="square" color="secondary">{{ hotel.rating }}</ion-badge>\n                        <span class="rating-label text-white" ion-text> of 5 - guest rating</span>\n                      </div>\n                      <div class="pull-right">\n                        <span class="origin-price hide-lg"\n                              *ngIf="hotel.sale_price">{{ hotel.price | currency:\'USD\':true:\'2.0\' }}</span>\n                        <span class="price text-white" *ngIf="!hotel.sale_price"\n                              ion-text>{{ hotel.price | currency:\'USD\':true:\'2.0\' }}</span>\n                        <span class="sale-price" *ngIf="hotel.sale_price"\n                              ion-text class="text-white">{{ hotel.sale_price | currency:\'USD\':true:\'2.0\' }}</span>\n                      </div>\n                      <div class="clear"></div>\n                    </div>\n                  </div>\n  \n                </div>\n              </div>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n  \n      </ion-item>\n    </ion-item-group>\n  \n  </ion-content>\n  '/*ion-inline-end:"/Users/people/Documents/homework/hplus-pwa/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/people/Documents/homework/hplus-pwa/src/pages/home/home.html"*/'<!-- -->\n<ion-header class="animated fadeIn no-shadow">\n  \n    <ion-navbar class="no-border" color="dark">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>\n        <div ion-text class="icon-title text-white"></div>\n        <span class="text-title">Hotel Plus</span>\n      </ion-title>\n      <ion-buttons end>\n        <button ion-button tappable (click)="presentNotifications($event)">\n          <ion-icon name="notifications"></ion-icon>\n        </button>\n        <button ion-button tappable (click)="goToAccount()">\n          <ion-icon name="cog"></ion-icon>\n        </button>\n      </ion-buttons>\n    </ion-navbar>\n  </ion-header>\n  \n  <ion-content class="animated fadeIn common-bg">\n    <!-- CLIMA -->\n    <ion-item-group class="weather-widget">\n      <ion-grid>\n        <ion-row>\n          <ion-col class="logo-hotel">\n            <img src="../assets/img/sheraton-logo.png" alt="">\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col>\n            <ul class="clima">\n              <li class="local">\n                Rio de Janeiro\n                <span>céu claro</span>\n              </li>\n              <li class="temp"><i class="wi wi-night-sleet"></i> 26ºc</li>\n              <li class="max"><span>Max</span>26ºc</li>\n              <li class="min"><span>Min</span>18ºc</li>\n            </ul>\n          </ion-col>\n        </ion-row>\n      </ion-grid>\n    </ion-item-group>\n    \n    <!-- MENU PRINCIPAL -->\n    <ion-item-group class="menu-widget">\n      <ion-item>\n        <ion-grid> <!-- incluir atributo \'no-padding\' para remover o espaço da área -->\n  \n          <ion-row>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-room" color="light">\n                <span class="button-label">Room Service</span>\n              </button>\n            </ion-col>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-perto" color="light" (click)="gotoPerto()">\n                <span class="button-label">Perto de Mim</span>\n              </button>\n            </ion-col>\n          </ion-row>\n  \n          <ion-row>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-extrato" color="light">\n                <span class="button-label">Extrato da Conta</span>\n              </button>\n            </ion-col>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-ramais" color="light">\n                <span class="button-label">Lista de Ramais</span>\n              </button>\n            </ion-col>\n          </ion-row>\n  \n          <ion-row>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-guestone" color="light">\n                <span class="button-label">GuestOne</span>\n              </button>\n            </ion-col>\n            <ion-col col-6 col-md-3 tappable>\n              <button ion-button full class="button-custom icon-service" color="light">\n                <span class="button-label">Guest Service</span>\n              </button>\n            </ion-col>\n          </ion-row>\n  \n        </ion-grid>\n      </ion-item>\n    </ion-item-group>\n  \n    <!-- HOTEIS DA REDE -->\n    <ion-item-group class="home-widget">\n      <ion-item-divider color="primary">\n        <h2 ion-text class="bold text-white">\n          <ion-icon name="pricetags"></ion-icon> \n          Demais Hotéis da Rede\n        </h2>\n      </ion-item-divider>\n  \n      <ion-item>\n        <ion-grid class="list-hotels primary-bg" no-padding>\n          <ion-row no-padding>\n            <ion-col *ngFor="let hotel of hotels; let i = index" col-6 col-md-3 tappable (click)="viewHotel(hotel.id)">\n              <div class="hotel-bg" [ngStyle]="{\'background-image\': \'url(\' + hotel.thumb + \')\'}" *ngIf="i < 4">\n                <div class="bg-filter">\n                  <div class="discount" *ngIf="hotel.sale_price">{{ (100 * (1 - hotel.price / hotel.sale_price)).toFixed(0)\n                    }}%\n                  </div>\n                  <div class="bottom-info">\n  \n                    <div>\n                      <div class="pull-left">\n                        <h5 ion-text class="text-white">{{ hotel.name }}</h5>\n                      </div>\n                      <div class="pull-right">\n                        <span class="origin-price hide-sm"\n                              *ngIf="hotel.sale_price">{{ hotel.price | currency:\'USD\':true }}</span>\n                      </div>\n                      <div class="clear"></div>\n                    </div>\n  \n                    <div>\n                      <div class="pull-left">\n                        <ion-badge class="square" color="secondary">{{ hotel.rating }}</ion-badge>\n                        <span class="rating-label text-white" ion-text> of 5 - guest rating</span>\n                      </div>\n                      <div class="pull-right">\n                        <span class="origin-price hide-lg"\n                              *ngIf="hotel.sale_price">{{ hotel.price | currency:\'USD\':true:\'2.0\' }}</span>\n                        <span class="price text-white" *ngIf="!hotel.sale_price"\n                              ion-text>{{ hotel.price | currency:\'USD\':true:\'2.0\' }}</span>\n                        <span class="sale-price" *ngIf="hotel.sale_price"\n                              ion-text class="text-white">{{ hotel.sale_price | currency:\'USD\':true:\'2.0\' }}</span>\n                      </div>\n                      <div class="clear"></div>\n                    </div>\n                  </div>\n  \n                </div>\n              </div>\n            </ion-col>\n          </ion-row>\n        </ion-grid>\n  \n      </ion-item>\n    </ion-item-group>\n  \n  </ion-content>\n  '/*ion-inline-end:"/Users/people/Documents/homework/hplus-pwa/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */], __WEBPACK_IMPORTED_MODULE_2__services_hotel_service__["a" /* HotelService */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* ModalController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* PopoverController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__services_hotel_service__["a" /* HotelService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_hotel_service__["a" /* HotelService */]) === "function" && _e || Object])
 ], HomePage);
 
+var _a, _b, _c, _d, _e;
 // 
 //# sourceMappingURL=home.js.map
 

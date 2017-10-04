@@ -29,6 +29,7 @@ import {SearchTripsPage} from "../pages/search-trips/search-trips";
 import {TabReviewsPage} from "../pages/tab-reviews/tab-reviews";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
+import {PertoPage} from "../pages/perto-mim/perto-mim";
 
 // import services
 // end import services
@@ -58,7 +59,8 @@ import {TripsPage} from "../pages/trips/trips";
     SearchTripsPage,
     TabReviewsPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    PertoPage
   ],
   imports: [
     BrowserModule,
@@ -88,7 +90,8 @@ import {TripsPage} from "../pages/trips/trips";
     SearchTripsPage,
     TabReviewsPage,
     TripDetailPage,
-    TripsPage
+    TripsPage,
+    PertoPage
   ],
   providers: [
     HotelService,
