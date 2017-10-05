@@ -1,0 +1,154 @@
+<!-- -->
+<ion-header class="animated fadeIn no-shadow">
+  
+    <ion-navbar class="no-border" color="dark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <div ion-text class="icon-title text-white"></div>
+        <span class="text-title">Hotel Plus</span>
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button tappable (click)="presentNotifications($event)">
+          <ion-icon name="notifications"></ion-icon>
+        </button>
+        <button ion-button tappable (click)="goToAccount()">
+          <ion-icon name="cog"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="animated fadeIn common-bg">
+    <!-- CLIMA -->
+    <ion-item-group class="weather-widget">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="logo-hotel">
+            <img src="../assets/img/sheraton-logo.png" alt="">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ul class="clima">
+              <li class="local">
+                Rio de Janeiro
+                <span>céu claro</span>
+              </li>
+              <li class="temp"><i class="wi wi-night-sleet"></i> 26ºc</li>
+              <li class="max"><span>Max</span>26ºc</li>
+              <li class="min"><span>Min</span>18ºc</li>
+            </ul>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item-group>
+    
+    <!-- MENU PRINCIPAL -->
+    <ion-item-group class="menu-widget">
+      <ion-item>
+        <ion-grid> <!-- incluir atributo 'no-padding' para remover o espaço da área -->
+  
+          <ion-row>
+            <ion-col col-6 col-md-3 tappable>
+              <button ion-button full class="button-custom icon-room" color="light">
+                <span class="button-label">Room Service</span>
+              </button>
+            </ion-col>
+            <ion-col col-6 col-md-3 tappable>
+              <button ion-button full class="button-custom icon-perto" color="light" (click)="gotoPerto()">
+                <span class="button-label">Perto de Mim</span>
+              </button>
+            </ion-col>
+          </ion-row>
+  
+          <ion-row>
+            <ion-col col-6 col-md-3 tappable>
+              <button ion-button full class="button-custom icon-extrato" color="light">
+                <span class="button-label">Extrato da Conta</span>
+              </button>
+            </ion-col>
+            <ion-col col-6 col-md-3 tappable>
+              <button ion-button full class="button-custom icon-ramais" color="light">
+                <span class="button-label">Lista de Ramais</span>
+              </button>
+            </ion-col>
+          </ion-row>
+  
+          <ion-row>
+            <ion-col col-6 col-md-3 tappable>
+              <button ion-button full class="button-custom icon-guestone" color="light">
+                <span class="button-label">GuestOne</span>
+              </button>
+            </ion-col>
+            <ion-col col-6 col-md-3 tappable>
+              <button ion-button full class="button-custom icon-service" color="light">
+                <span class="button-label">Guest Service</span>
+              </button>
+            </ion-col>
+          </ion-row>
+  
+        </ion-grid>
+      </ion-item>
+    </ion-item-group>
+  
+    <!-- HOTEIS DA REDE -->
+    <ion-item-group class="home-widget">
+      <ion-item-divider color="primary">
+        <h2 ion-text class="bold text-white">
+          <ion-icon name="pricetags"></ion-icon> 
+          Demais Hotéis da Rede
+        </h2>
+      </ion-item-divider>
+  
+      <ion-item>
+        <ion-grid class="list-hotels primary-bg" no-padding>
+          <ion-row no-padding>
+            <ion-col *ngFor="let hotel of hotels; let i = index" col-6 col-md-3 tappable (click)="viewHotel(hotel.id)">
+              <div class="hotel-bg" [ngStyle]="{'background-image': 'url(' + hotel.thumb + ')'}" *ngIf="i < 4">
+                <div class="bg-filter">
+                  <div class="discount" *ngIf="hotel.sale_price">{{ (100 * (1 - hotel.price / hotel.sale_price)).toFixed(0)
+                    }}%
+                  </div>
+                  <div class="bottom-info">
+  
+                    <div>
+                      <div class="pull-left">
+                        <h5 ion-text class="text-white">{{ hotel.name }}</h5>
+                      </div>
+                      <div class="pull-right">
+                        <span class="origin-price hide-sm"
+                              *ngIf="hotel.sale_price">{{ hotel.price | currency:'USD':true }}</span>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+  
+                    <div>
+                      <div class="pull-left">
+                        <ion-badge class="square" color="secondary">{{ hotel.rating }}</ion-badge>
+                        <span class="rating-label text-white" ion-text> of 5 - guest rating</span>
+                      </div>
+                      <div class="pull-right">
+                        <span class="origin-price hide-lg"
+                              *ngIf="hotel.sale_price">{{ hotel.price | currency:'USD':true:'2.0' }}</span>
+                        <span class="price text-white" *ngIf="!hotel.sale_price"
+                              ion-text>{{ hotel.price | currency:'USD':true:'2.0' }}</span>
+                        <span class="sale-price" *ngIf="hotel.sale_price"
+                              ion-text class="text-white">{{ hotel.sale_price | currency:'USD':true:'2.0' }}</span>
+                      </div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+  
+      </ion-item>
+    </ion-item-group>
+  
+  </ion-content>
+  

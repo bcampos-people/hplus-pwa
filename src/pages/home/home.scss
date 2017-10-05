@@ -1,0 +1,249 @@
+page-home,
+.home {
+  .icon-title {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../assets/img/hplus-ico.png") no-repeat;
+    background-size: 100%;    
+  }
+
+  .text-title {
+    font-size: .9em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .toolbar-title {
+    padding: 0;
+  }
+
+  [class*='item-divider'] {
+    border-bottom-color: transparent;
+  }
+
+  .home-card {
+    width: calc(100% - 12px);
+    margin: 16px 6px 32px;
+    .list {
+      button.item {
+        &:first-child {
+          border-bottom: 1px solid color($colors, primary);
+        }
+      }
+    }
+    ion-grid {
+      padding: 0;
+      ion-row {
+        padding: 8px;
+        ion-col {
+          padding: 8px;
+        }
+      }
+    }
+  }
+
+  .home-widget {
+    ion-item-divider {
+      h2 {
+        ion-icon {
+          margin-right: 5px;
+          color: color($colors, warning);
+        }
+      }
+    }
+  }
+
+  .home-widget,
+  .menu-widget {
+    .item {
+      padding: 0;
+      &.item-divider {
+        padding: 8px 16px;
+      }
+      .item-inner {
+        padding: 0;
+        .label {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // Menu
+  .menu-widget {
+    .item {
+      background-color: rgba(0, 0, 0, 0.01);
+      .col {
+        // padding: 0; /* remove o espaço dos botões no menu */
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  // Logo Hotel + Clima
+  .weather-widget {
+    .logo-hotel {
+      width: 100%;
+      display: flex;
+      min-height: 50px;
+      align-items: center;
+      margin: 5px auto 10px;
+      justify-content: center;
+
+      img {
+        max-width: auto;
+        max-height: 80px; 
+      }
+    }
+    background-color: color($colors, ice);
+
+    .clima {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+
+      li {
+        flex: 1;
+        display: flex;
+        font-weight: 600;
+        align-items: center;
+        color: color($colors, iron);
+
+        &.local {
+          display: flex;
+          font-size: 1em;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          border-right: 1px solid rgba(0, 0, 0, .1);
+
+          span {
+            font-weight: 300;
+            font-size: .9em;
+            line-height: 1;
+          }
+        }
+
+        &.temp {
+          flex: 0;
+          font-size: 1.5em;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-bottom: 5px;
+  
+          i {
+            margin-right: 5px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      li.max, li.min {
+        flex: 0;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+          font-size: .9em;
+          line-height: .85;
+          text-transform: uppercase;
+        }
+      }
+      li.max {
+        color: color($colors, warning);
+        border-left: 1px solid rgba(0, 0, 0, .1);
+      }
+      li.min { color: color($colors, secondary); }
+    }
+  }
+
+  ion-grid.list-hotels {
+
+    ion-row {
+      flex-wrap: wrap;
+
+      ion-col {
+        padding: 0.5rem;
+
+        .rating-label {
+          display: none;
+        }
+
+        h5 {
+          font-size: 1.5rem;
+        }
+
+        .hide-sm {
+          display: none;
+        }
+
+        .hotel-bg {
+          .bg-filter {
+            .discount {
+              font-size: .9em;
+              font-weight: bold;
+              text-shadow: 0 2px 0 rgba(0, 0, 0, .1);
+              background-color: color($colors, active);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Botões
+.button-custom {
+  margin: 0;
+  height: auto;
+  min-height: 150px;
+  position: relative;
+  border-radius: .2em; /* remover caso retire-se os espaços do bloco */
+  text-transform: none;
+  background-color: #fff;
+  box-shadow: 0 0.2em 0.5rem rgba(0, 0, 0, 0.1);
+}
+.button-label {
+  bottom: 0;
+  width: 100%;
+  font-size: .9em;
+  padding: 0 0 7.5%;
+  position: absolute;
+  color: color($colors, iron);
+}
+
+.icon-room {
+  background: color($colors, ice) url("../assets/icon/ico-room_service.png") no-repeat;
+  background-size: 65%; 
+}
+.icon-perto {
+  background: color($colors, ice) url("../assets/icon/ico-perto_mim.png") no-repeat;
+  background-size: 60%; 
+}
+.icon-extrato {
+  background: color($colors, ice) url("../assets/icon/ico-extrato_conta.png") no-repeat;
+  background-size: 58.5%; 
+}
+.icon-ramais {
+  background: color($colors, ice) url("../assets/icon/ico-lista_ramais.png") no-repeat;
+  background-size: 60%; 
+}
+.icon-guestone {
+  background: color($colors, ice) url("../assets/icon/ico-guestone.png") no-repeat;
+  background-size: 60%; 
+}
+.icon-service {
+  background: color($colors, ice) url("../assets/icon/ico-guest_service.png") no-repeat;
+  background-size: 62.5%; 
+}
+
+.button-custom {
+  background-position-x: center;
+  background-position-y: 25%;
+}
